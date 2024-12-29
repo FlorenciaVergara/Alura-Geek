@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header_imagen" src="/img/logo.png" alt="imagen corazones">
+        <a class="header_titulo" href="index.html">Alura Geek</a>
+    </header>
+    <main class="container">
+        <seccion class="productos_container">
+            <h1 class="productos_titulo">Mis productos:</h1>
+            <ul class="productos_lista" alt="productos alura" data-lista>
+               
+            </ul>
+        </seccion>
+        <seccion class="formulario_container">
+            <form class="formulario" data-formulario autocomplete="off">
+                <h2 class="formulario_titulo">Agrega un producto:</h2>
+                    <div class="formulario_campo">
+                        <input name="nombre" class="campo_escrita" required placeholder="Nombre..."
+                            id='nombre' data-nombre/>
+                    </div>
+                    <div class="formulario_campo">
+                        <input name="precio" class="campo_escrita" required placeholder="Precio..."
+                            id='precio' data-precio/>
+                    </div>
+                    <div class="formulario_campo">
+                        <input name="imagen" class="campo_escrita" required placeholder="Imagen..."
+                            id='imagen' data-imagen/>
+                    </div>
+                    <div class="formulario_botones">
+                        <button class="formulario_boton_enviar" type="submit">Enviar</button>
+                        <button class="formulario_boton_limpiar" type="reset">Limpiar</button>
+                    </div>
+            </form>
+        </seccion>
+    </main>
+    <footer class="footer_container">
+        <div class="footer">
+            <img class="footer_imagen" src="/img/logo.png" alt="imagen de corazones">
+            <p class="footer_titulo">Alura Geek</p>
+        </div>
+        <p class="footer_texto">Desarrollado por Florencia Vergara</p>
+    </footer>
+    <script src="/js/mostrarProductos.js" type="module"></script>
+    <script src="/js/crearProducto.js" type="module"></script>
+</body>
+</html>
